@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "description": "https://github.com/mui/mui-x/blob/v8.11.1/docs/data/data-grid/column-pinning/BasicColumnPinning.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/x-data-grid-pro": "latest",
+    "@mui/x-data-grid-generator": "latest",
+    "react-dom": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}
