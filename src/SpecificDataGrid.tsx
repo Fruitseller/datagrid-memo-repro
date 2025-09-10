@@ -1,9 +1,7 @@
 import * as React from 'react';
-import EditIcon from '@mui/icons-material/Edit';
 import {
   GridColDef,
   GridRowsProp,
-  GridActionsCellItem,
 } from '@mui/x-data-grid-pro';
 import {
   randomCreatedDate,
@@ -125,14 +123,7 @@ export default function SpecificDataGrid({ flag }: SpecificDataGridProps) {
         width: 220,
         editable: true,
       },
-      {
-        field: 'actions',
-        type: 'actions',
-        resizable: false,
-        getActions: () => [
-          <GridActionsCellItem icon={<EditIcon />} label="Edit" />,
-        ],
-      },
+
     ],
     [flag]
   );
