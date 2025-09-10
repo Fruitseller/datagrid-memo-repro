@@ -1,7 +1,4 @@
-import {
-  GridColDef,
-  GridRowsProp,
-} from '@mui/x-data-grid-pro';
+import { GridColDef, GridRowsProp } from '@mui/x-data-grid-pro';
 import {
   randomCreatedDate,
   randomTraderName,
@@ -121,9 +118,14 @@ export default function NotMemoizedDataGrid({ flag }: SpecificDataGridProps) {
       width: 220,
       editable: true,
     },
-  ]
+  ];
 
-  return <>
-    <div><span>Flag: </span> <span>{flag}</span></div>
-    <GenericDataGrid rows={rows} columns={columns} /></>;
+  return (
+    <>
+      <div>
+        <span>Flag: </span> <span>{flag}</span>
+      </div>
+      <GenericDataGrid rows={rows} columns={columns} />
+    </>
+  );
 }

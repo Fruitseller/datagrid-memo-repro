@@ -1,6 +1,11 @@
 import * as React from 'react';
-import {DataGridPro, GridActionsCellItem, GridColDef, GridRowsProp} from '@mui/x-data-grid-pro';
-import EditIcon from "@mui/icons-material/Edit";
+import {
+  DataGridPro,
+  GridActionsCellItem,
+  GridColDef,
+  GridRowsProp,
+} from '@mui/x-data-grid-pro';
+import EditIcon from '@mui/icons-material/Edit';
 
 interface GenericDataGridProps {
   rows: GridRowsProp;
@@ -11,16 +16,18 @@ export default function GenericDataGrid({
   rows,
   columns,
 }: GenericDataGridProps) {
-
   const muiColumns: GridColDef[] = React.useMemo(() => {
-    return [...columns, {
-      field: 'actions',
-      type: 'actions',
-      resizable: false,
-      getActions: () => [
-        <GridActionsCellItem icon={<EditIcon />} label="Edit" />,
-      ],
-    }]
+    return [
+      ...columns,
+      {
+        field: 'actions',
+        type: 'actions',
+        resizable: false,
+        getActions: () => [
+          <GridActionsCellItem icon={<EditIcon />} label="Edit" />,
+        ],
+      },
+    ];
   }, [columns]);
 
   return (

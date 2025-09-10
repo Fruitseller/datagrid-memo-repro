@@ -1,6 +1,6 @@
 import * as React from 'react';
 import NotMemoizedDataGrid from './NotMemoizedDataGrid.tsx';
-import MemoizedDataGrid from "./MemoizedDataGrid.tsx";
+import MemoizedDataGrid from './MemoizedDataGrid.tsx';
 
 export default function DataGridWrapper() {
   const [flag, setFlag] = React.useState(true);
@@ -13,6 +13,10 @@ export default function DataGridWrapper() {
     return () => clearTimeout(timer);
   }, []);
 
-  return <><NotMemoizedDataGrid flag={flag}/>
-    <MemoizedDataGrid flag={flag}/></>;
+  return (
+    <>
+      <NotMemoizedDataGrid flag={flag} />
+      <MemoizedDataGrid flag={flag} />
+    </>
+  );
 }
