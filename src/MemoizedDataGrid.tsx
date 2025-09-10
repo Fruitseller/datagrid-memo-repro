@@ -127,7 +127,7 @@ export default function MemoizedDataGrid({ flag }: Props) {
   return (
     <>
       <div>
-        <span>Flag: </span> <span>{flag ? "✅" : "❌"}</span>
+        <span>Memoized DataGrid with Flag: </span> <span>{flag ? "✅" : "❌"}</span>
       </div>
       <GenericDataGrid rows={rows} columns={columns} />
     </>
