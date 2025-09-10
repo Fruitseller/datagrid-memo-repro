@@ -14,9 +14,13 @@ export default function DataGridWrapper() {
   });
 
   return (
-    <>
-      <NotMemoizedDataGrid flag={flag} />
-      <MemoizedDataGrid flag={flag} />
-    </>
+    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+      <div style={{ marginBottom: '40px' }}>
+        <NotMemoizedDataGrid flag={flag} />
+      </div>
+      <div>
+        <MemoizedDataGrid flag={flag} />
+      </div>
+    </div>
   );
 }
