@@ -56,9 +56,6 @@ coverage/
 # Prettier cache
 .prettiercache
 
-# TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm/
 
