@@ -90,11 +90,11 @@ const rows: GridRowsProp = [
   },
 ];
 
-interface SpecificDataGridProps {
+interface Props {
   flag: boolean;
 }
 
-export default function NotMemoizedDataGrid({ flag }: SpecificDataGridProps) {
+export default function NotMemoizedDataGrid({ flag }: Props) {
   const columns: GridColDef[] = [
     {
       field: 'name',
@@ -123,7 +123,7 @@ export default function NotMemoizedDataGrid({ flag }: SpecificDataGridProps) {
   return (
     <>
       <div>
-        <span>Flag: </span> <span>{flag}</span>
+        <span>Flag: </span> <span>{flag ? "✅" : "❌"}</span>
       </div>
       <GenericDataGrid rows={rows} columns={columns} />
     </>

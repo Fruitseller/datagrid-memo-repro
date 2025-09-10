@@ -11,7 +11,7 @@ export default function DataGridWrapper() {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, []);
+  });
 
   return (
     <>
